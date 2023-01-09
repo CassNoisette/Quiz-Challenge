@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Web APIs quiz</title>
+</head>
+
+<body class = "container flex">
+
+  <header>
+    <button>View Highscores</button>
+    <div id="clock">Time</div>
+    <h1 id="quiz-title">Coding Quiz Challenge </h1>
+  </header>
+
+
+  <div>
+    <h3>Answer the following question within the time limit.<br>
+      Note: Any incorrect answer will penalize your score time by 10 seconds. <br>
+      Good Luck!</h3>
+  </div>
+
+  <div id="question-container" class="hide">
+    <div id="question">Question</div>
+    <div id="answer-buttons" class="btn-grid">
+    </div>
+  </div>
+
+  <div>
+    <button id="start-button" class="start-button button"> Start</button>
+    <!-- <button id="next-button" class="next-button button"> Next</button> -->
+  </div>
+
+  <div id="end-screen" class="hide">
+    <h2>All done!</h2>
+    <p>Your final score is <span id="final-score"></span>.</p>
+    <p>
+      Enter initials: <input type="text" id="initials"> 
+      <button id="submit">Submit</button>
+    </p>
+  </div>
+
+  <div id="feedback" class="feedback hide"></div>
+
+
+  <script src="assets/js/quiz.js"></script>
+</body>
+
+</html>
